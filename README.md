@@ -8,10 +8,10 @@ Mixed use has been extensively applied as an urban planning principle and hinder
 ## Code description
 The Jupyter Notebook file "mixed-use decomposition.ipynb" is the program to decompose temporal activity signatures (TASs) and obtain multiple results include urban function composition, dynamic activity proportions, and the mixing index. The program's inputs include extracted base curves (.csv) and observed TASs (.csv). Outputs are currently prints and easy to be organized as files. The decomposition is implemented based on the linear model using the [scipy.optimize](https://docs.scipy.org/doc/scipy/reference/optimize.html#module-scipy.optimize) in Python.
 
-Please note that the program doesn't include the contents on data organization, base curve extraction, and result validation.
+Please note that the program doesn't include the contents on data organization, base curve extraction, and result validation. The published article has presented several methods to extract base curves.
 
 ## Sample data
-Sample data supporting the program include observed TASs (observed.csv) and extracted base curves (basecurve.csv). For both files, each row represents a curve (i.e., TAS or base curve), and columns represent corresponding temporal dimensions. All the curves are real and processed by sum normalization. Observed TASs are sampled from 451 zones. Base curves are detected based on POI types (illustrated in Figure 4(d) of the published article).
+Sample data supporting the program include observed TASs (observed.csv) and extracted base curves (basecurve.csv). For both files, each row represents a curve (i.e., TAS or base curve), and columns represent corresponding temporal dimensions. All the curves are real and processed by sum normalization. Observed TASs are sampled from 451 zones. Base curves are detected based on POI type statistics (illustrated in Figure 4(d) of the published article).
 
 ## Cite
 Please consider citing our paper if this helps in your work:
